@@ -39,28 +39,24 @@ createDivs(grid);
 reset.addEventListener("click", () => {
   colorMode = "black";
   container.innerHTML = "";
+  clearGrid();
   createDivs(16);
 });
 
 clear.addEventListener("click", () => {
-  const grids = document.querySelectorAll(".grid");
-  grids.forEach((e) => {
-    e.style.backgroundColor = "white";
-    e.style.opacity = "";
-  });
+  clearGrid();
 });
 
 size.addEventListener("click", () => {
-      container.innerHTML = "";
+  container.innerHTML = "";
   let newSize = prompt("Select grid size (Maximum 100)");
   if (newSize && !isNaN(newSize) && newSize <= 100) {
     grid = Number(newSize);
-    createDivs(grid); }
-    else {
-        alert("Please enter a number between 1 and 100.");
-        createDivs(16); 
-    }
-  
+    createDivs(grid);
+  } else {
+    alert("Please enter a number between 1 and 100.");
+    createDivs(16);
+  }
 });
 
 random.addEventListener("click", () => {
@@ -74,3 +70,11 @@ classic.addEventListener("click", () => {
 shade.addEventListener("click", () => {
   colorMode = "shade";
 });
+
+function clearGrid() {
+  const grids = document.querySelectorAll(".grid");
+  grids.forEach((e) => {
+    e.style.backgroundColor = "white";
+    e.style.opacity = "";
+  });
+}
