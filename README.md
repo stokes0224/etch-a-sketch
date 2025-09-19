@@ -26,7 +26,7 @@ This is my **Etch-a-Sketch** for the Odin Project. Thanks again to all the peopl
 
 ## 🚀 How to Play
 
-TBC
+Check out the live project here: [Etch-A-Sketch](https://stokes0224.github.io/etch-a-sketch/)
 
 Hover, click, repeat, enjoy. 🎉
 
