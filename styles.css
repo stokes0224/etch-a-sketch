@@ -2,11 +2,8 @@
     display: flex;
     flex-wrap: wrap;
     border-style: solid;
-    width: 256px;
-    height: 256px;
+    width: 800px;
+    height: 800px;
 }
 
-.grid{
-    width: 16px;
-    height: 16px;
-}
+.row {display: flex;}
